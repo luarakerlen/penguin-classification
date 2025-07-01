@@ -30,6 +30,7 @@ Foram utilizadas as bibliotecas `scikit-learn`, `joblib`, `Flask`, `pytest` e ou
 ├── frontend/
 │   ├── index.html              # Frontend com formulário interativo
 │   ├── style.css               # Estilização do frontend
+└── MVP_pinguins.ipynb        # Colab com o processo de criação do modelo de machine learning
 └── README.md                 # Documentação do projeto
 ```
 
