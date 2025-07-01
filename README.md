@@ -1,6 +1,6 @@
 # 🐧 Predição de Espécie de Pinguins com Machine Learning
 
-Este projeto foi desenvolvido como parte do **MVP da Sprint de Qualidade de Software** no curso de **Pós-graduação em Engenharia de Software** da **PUC-Rio**.
+Este projeto foi desenvolvido o **MVP da Sprint de Qualidade de Software** no curso de **Pós-graduação em Engenharia de Software** da **PUC-Rio**.
 
 O objetivo principal é construir um sistema completo de predição de espécies de pinguins, utilizando técnicas de machine learning e boas práticas de desenvolvimento de software.
 
