@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Predição de Pinguins</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Predição de Espécie de Pinguim</h1>
+		<form id="formulario">
+			<div class="inputs">
+				<div class="input-group">
+					<label for="comprimento">Comprimento do bico (mm):</label>
+					<input type="number" id="comprimento" required />
+				</div>
+
+				<div class="input-group">
+					<label for="profundidade">Profundidade do bico (mm):</label>
+					<input type="number" id="profundidade" required />
+				</div>
+
+				<div class="input-group">
+					<label for="nadadeira">Comprimento da nadadeira (mm):</label>
+					<input type="number" id="nadadeira" required />
+				</div>
+			</div>
+
+			<button type="submit">Prever Espécie</button>
+		</form>
+
+		<div id="resultado"></div>
+
+		<script>
+			const formulario = document.getElementById('formulario');
+			const resultado = document.getElementById('resultado');
+
+			formulario.addEventListener('submit', async (e) => {
+				e.preventDefault();
+
+				const comprimento = parseFloat(
+					document.getElementById('comprimento').value
+				);
+				const profundidade = parseFloat(
+					document.getElementById('profundidade').value
+				);
+				const nadadeira = parseFloat(
+					document.getElementById('nadadeira').value
+				);
+
+				const resposta = await fetch('http://127.0.0.1:5000/predict', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify({
+						input: [comprimento, profundidade, nadadeira],
+					}),
+				});
+
+				const dados = await resposta.json();
+				if (resposta.ok) {
+					resultado.innerText = `Espécie prevista: ${dados.predicao}`;
+				} else {
+					resultado.innerText = `Erro: ${dados.erro}`;
+				}
+			});
+		</script>
+	</body>
+</html>

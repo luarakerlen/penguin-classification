@@ -1,0 +1,75 @@
+body {
+	background: url('https://conteudo.imguol.com.br/c/entretenimento/56/2016/01/28/um-encontro-com-pinguins-imperadores-faz-parte-da-visita-a-antartida-1453996577419_v2_900x506.jpg')
+		no-repeat center center fixed;
+	background-size: cover;
+	font-family: sans-serif;
+	max-width: 600px;
+	margin: 40px auto;
+	padding: 20px;
+	color: #fff;
+	text-shadow: 1px 1px 2px #000;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+.inputs {
+	border-radius: 8px;
+	background-color: rgba(18, 10, 143, 0.8);
+	padding: 16px 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.input-group {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+label {
+	text-wrap: nowrap;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #000;
+	font-size: 16px;
+}
+
+button {
+	margin-top: 15px;
+	padding: 12px 20px;
+	font-size: 16px;
+	background-color: white;
+	color: rgb(18, 10, 143);
+	font-weight: 600;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+	background-color: rgb(18, 10, 143);
+	color: white;
+  transition: all 0.1s ease;
+}
+
+#resultado {
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
