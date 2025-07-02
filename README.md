@@ -18,6 +18,13 @@ Foram utilizadas as bibliotecas `scikit-learn`, `joblib`, `Flask`, `pytest` e ou
 
 ---
 
+## 🎥 Apresentação em vídeo
+
+[![Assista à apresentação do projeto no YouTube](https://img.youtube.com/vi/xdMSgmxBF0U/0.jpg)](https://youtu.be/xdMSgmxBF0U)
+
+
+---
+
 ## 📁 Estrutura do Projeto
 
 ```
